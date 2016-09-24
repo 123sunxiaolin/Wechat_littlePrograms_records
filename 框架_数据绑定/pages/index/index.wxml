@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <button bindtap = "click">控制视图的显示 </button>
+
+
+  <!--数据绑定-->
+  <view> {{message}}</view>
+
+  <!--数据绑定_控制属性-->
+ <view wx:if="{{flag}}"> {{message1}}</view>
+ <view wx:else> {{message2}}</view>
+
+  <!--算术运算-->
+  <view type = "hidden"> {{a+b}} + {{c}} + d </view>
+
+  <!--条件渲染-->
+  <view wx:if="{{length > 5}}"> 1 </view>
+  <view wx:elif="{{length > 2}}"> 2 </view>
+  <view wx:else> 3 
+  </view>
+
+  <block wx:if="{{length > 5}}">
+    <view> 783747843 </view>
+    <view> 8439384 </view>
+  </block>
+
+
+</view>
