@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+<!--添加default类型的ButtonButton-->
+<button type="default" size="{{defaultSize}}" loading="{{loading}}"
+        disabled="{{disabled}}" bindtap="onClickDefaultBtn"> 跳转到包含按钮界面 </button>
+
+
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
