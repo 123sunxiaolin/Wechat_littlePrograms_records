@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <!--直接引用-->
+   <include src="../template/header"/>
+
+  <!--不同目录下引用:需要引用布局文件的相对路径-->
+   <import src="../template/template.wxml"/>
+   <template is="msgItem" data="{{...item}}"/>
+
+  <!--同一目录下引用：直接引用布局文件-->
+   <import src="tem.wxml"/>
+   <template is="test" data="{{value}}"/>
+
+   <!--对模板中定义的变量值赋值：使用对象的方法赋值-->
+    <import src="tem.wxml"/>
+    <template is="test2" data="{{...object}}"/>
+
+    <!--直接引用-->
+    <include src="../template/footer"/>
+
+  
+</view>

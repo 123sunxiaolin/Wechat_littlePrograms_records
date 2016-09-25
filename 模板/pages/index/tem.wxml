@@ -1,0 +1,12 @@
+<template name="test">
+  <view>
+    <text> {{value}}</text>
+  </view>
+</template>
+
+<template name="test2">
+  <view>
+    <text> {{value}}</text>
+    <text> {{value1}}</text>
+  </view>
+</template>
