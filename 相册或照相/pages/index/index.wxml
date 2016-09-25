@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image wx:if="{{imageUrl != null}}" class="userinfo-avatar" src="{{imageUrl}}" background-size="cover"></image>
+    <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <!--传递数据：以data开头，多单词以‘-’隔开-->
+  <button bindtap="onClick" type="primary" data-value = "test">更换头像</button>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
