@@ -8,3 +8,7 @@
 - 条件渲染中的：**wx:if**、**block wx:if**
 
 ###### 3、 button的使用 `9.25`
+###### 4、 列表的使用 `9.25`
+- **wx:for**；
+- **wx:for-item**和**wx:for-index**；
+- 嵌套
