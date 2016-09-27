@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="page">
+
+  <view class="page_hd">
+    <text class="page_title"> View </text>
+    <text class="page_desc"> {{description}} </text>
+  </view>  
+
+  <view class="page__bd">
+
+    <view class="selection">
+
+      <view class="section__title">flex-direction: row</view>
+      <view class="flex-wrp" style="flex-direction:row;">
+                <view class="flex-item bc_green">1</view>
+                <view class="flex-item bc_red">2</view>
+                <view class="flex-item bc_blue">3</view>
+      </view>
+
+       <view class="section">
+            <view class="section__title">flex-direction: column</view>
+            <view class="flex-wrp" style="height: 300px;flex-direction:column;">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+         <view class="section">
+            <view class="section__title">justify-content:flex-start</view>
+            <view class="flex-wrp" style="flex-direction:row; justify-content:flex-start">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="section__title">justify-content:flex-end</view>
+            <view class="flex-wrp" style="flex-direction:row; justify-content:flex-end">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+        
+        <view class="section">
+            <view class="section__title">justify-content:center</view>
+            <view class="flex-wrp" style="flex-direction:row; justify-content:center">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+         <view class="section">
+            <view class="section__title">justify-content:space-between</view>
+            <view class="flex-wrp" style="flex-direction:row; justify-content:space-between;">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="section__title">justify-content:space-around</view>
+            <view class="flex-wrp" style="flex-direction:row; justify-content:space-around;">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="section__title">align-items: flex-end</view>
+            <view class="flex-wrp" style="height:200px; flex-direction:row; justify-content:center; align-items: flex-end;">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+        <view class="section">
+            <view class="section__title">align-items: center</view>
+            <view class="flex-wrp" style="height:200px; flex-direction:row; justify-content:center; align-items: center;">
+                <view class="flex-item bc_green"></view>
+                <view class="flex-item bc_red"></view>
+                <view class="flex-item bc_blue"></view>
+            </view>
+        </view>
+
+    <view>
+
+  </view>
+
+
+</view>

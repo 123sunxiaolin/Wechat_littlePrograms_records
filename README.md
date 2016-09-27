@@ -23,3 +23,12 @@
 
 - API：**wx.chooseImage(OBJECT)**
 - 点击事件信息的打印
+
+###### 7、 组件_view `9.27`
+
+- **flex-direction**：column/row
+
+- **justify-content**:flex-start/flex-end/center/space-around/space-between
+
+- **align-items**:flex-end/center;
+[flex布局详解](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
