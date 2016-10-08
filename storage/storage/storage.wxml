@@ -1,0 +1,13 @@
+<view class = "main"> 
+  <form bindsubmit = "formSubmit"> 
+    <view class = "inputView">
+            <input class = "input-key" placeholder = "请输入Key值" bindinput = "onKeyInput" name = "key" value = "{{key}}"> </input>
+            <input class = "input-value" placeholder = "请输入Value值" bindinput = "onDataInput" name = "value" value = "{{value}}"> </input>
+     </view>
+     <button class = "button" formType = "submit" type= "primary"> 获取表单数据</button>
+    </form>
+   <button class = "button"  type= "primary" bindtap = "getData"> 读取数据</button>
+   <button class = "button"  type= "primary" bindtap = "storeData"> 存储数据</button>
+   <button class = "button"  type= "primary" bindtap = "clearData"> 清空数据</button>
+
+</view>

@@ -1,0 +1,13 @@
+{
+    "pages":[
+        "storage/storage"
+
+    ],
+
+    "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "数据存储",
+    "navigationBarTextStyle":"black"
+  }
+}

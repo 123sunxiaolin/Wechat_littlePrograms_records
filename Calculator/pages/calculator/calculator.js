@@ -237,6 +237,17 @@ var pageData = {
         */
     onPlus:function(){
         console.log("+")
+
+        var str = "hello world"
+        console.log(str.length)
+        console.log(str.charAt(1))
+        console.log(str.substring(1,4))
+        console.log(str.slice(-3))
+        console.log(str.indexOf('l'))
+        console.log(str.split(' '))
+        console.log(str.replace('h','H'))
+        console.log(str.toUpperCase())
+        
         if(!isCalculating){
 
             isCalculating = true;
@@ -490,8 +501,6 @@ var pageData = {
             animation:this.animation.export()
         })
     }
-
-
 
 }
 Page(pageData)
