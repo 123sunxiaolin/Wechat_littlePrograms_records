@@ -39,6 +39,25 @@
             <button class = "button1" bindtap = "onZero" type = "default">0</button>
             <button class = "button1" bindtap = "onEquality" type = "primary">=</button>
         </view>
+
+        <view class = "share">
+            <view class = "share_button_first">
+                 <button class = "share_button" bindtap = "onRotate" type = "primary">旋转</button>
+                 <button class = "share_button" bindtap = "onScale" type = "primary">缩放</button>
+                 <button class = "share_button" bindtap = "onTranslate" type = "primary">移动</button>
+            </view>
+             <view class = "share_image"  animation = "{{animation}}">
+                <image class = "image" src = "/images/share.jpg"> </image>
+                <text class = "title"> 欢迎关注:iOSDevSkills</text>
+             </view>
+             <view class = "share_button_second">
+                <button class = "share_button" bindtap = "onSkim" type = "primary">倾斜</button>
+                <button class = "share_button" bindtap = "onRotateAndScale" type = "primary">旋转缩放</button>
+                <button class = "share_button" bindtap = "onTranslateAndSkim" type = "primary">移动倾斜</button>
+            </view>
+
+            </view>
+        </view>
     <view>
 
 </view>

@@ -226,6 +226,9 @@ var isEnd = false
 
 //新思维
 var pageData = {
+     onReady:function(){
+         this.animation = wx.createAnimation()
+     },
     data:{
     inputValue:"0"
     },
@@ -244,6 +247,7 @@ var pageData = {
                 inputValue:this.data.inputValue + action
                 })
         }
+        //this.onRotate()
     },
     onMinus:function(){
         console.log(parseInt(this.data.inputValue)+ 10 + 12)
@@ -437,8 +441,57 @@ var pageData = {
             action = ''
             isEnd = true
 
+            this.animation.rotate(Math.random() * 720 - 360).step()
+                .scale(Math.random() * 2).step()
+                .translate(Math.random() * 100 - 50, Math.random() * 100 - 50).step()
+                .skew(Math.random() * 90, Math.random() * 90).step()
+                this.setData({ animation: this.animation.export() })
+
         }
+    },
+    /*
+    处理动画相关操作
+    */
+    onRotate:function(){
+        this.animation.rotate(Math.random() * 720 - 360).step()
+        this.setData({
+            animation:this.animation.export()
+        })
+    },
+    onScale:function(){
+        this.animation.scale(Math.random() * 2).step()
+        this.setData({
+            animation:this.animation.export()
+        })
+    },
+    onTranslate:function(){
+        this.animation.translate(Math.random() * 100 - 50, Math.random() * 100 - 50).step()
+        this.setData({
+            animation:this.animation.export()
+        })
+    },
+    onSkim:function(){
+        this.animation.skew(Math.random() * 90, Math.random() * 90).step()
+        this.setData({
+            animation:this.animation.export()
+        })
+    },
+    onRotateAndScale:function(){
+         this.animation.rotate(Math.random() * 720 - 360)
+                       .scale(Math.random() * 2).step()
+        this.setData({
+            animation:this.animation.export()
+        })
+    },
+    onTranslateAndSkim:function(){
+        this.animation.translate(Math.random() * 100 - 50, Math.random() * 100 - 50)
+                       .skew(Math.random() * 90, Math.random() * 90).step()
+        this.setData({
+            animation:this.animation.export()
+        })
     }
+
+
 
 }
 Page(pageData)
