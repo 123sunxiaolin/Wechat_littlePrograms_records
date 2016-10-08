@@ -1,0 +1,44 @@
+<!--calculator.wxml-->
+<view class = "main"> 
+
+    <view class = "showArea">
+        <input placeholder = "请输入需要计算的数值" focus = "true" disabled = "true" value = "{{inputValue}}">
+        </input>
+    </view>
+
+    <view class = "actionArea">
+        <view class = "first">
+            <button class = "button" bindtap = "onPlus" type = "primary">+</button>
+            <button class = "button" bindtap = "onMinus" type = "primary">—</button>
+            <button class = "button" bindtap = "onMultiply" type = "primary">X</button>
+            <button class = "button" bindtap = "onDivide" type = "primary">/</button>
+        </view>
+
+        <view class = "second">
+            <button class = "button" bindtap = "onSeven" type = "default">7</button>
+            <button class = "button" bindtap = "onEight" type = "default">8</button>
+            <button class = "button" bindtap = "onNine" type = "default">9</button>
+            <button class = "button" bindtap = "onDel" type = "primary">Del</button>
+        </view>
+
+        <view class = "third">
+            <button class = "button" bindtap = "onFour" type = "default">4</button>
+            <button class = "button" bindtap = "onFive" type = "default">5</button>
+            <button class = "button" bindtap = "onSix" type = "default">6</button>
+            <button class = "button" bindtap = "onClear" type = "primary">C</button>
+        </view>
+
+        <view class = "forth">
+            <button class = "button" bindtap = "onOne" type = "default">1</button>
+            <button class = "button" bindtap = "onTwo" type = "default">2</button>
+            <button class = "button" bindtap = "onThree" type = "default">3</button>
+            <button class = "button" bindtap = "onPoint" type = "primary">.</button>
+        </view>
+
+        <view class = "fifth">
+            <button class = "button1" bindtap = "onZero" type = "default">0</button>
+            <button class = "button1" bindtap = "onEquality" type = "primary">=</button>
+        </view>
+    <view>
+
+</view>

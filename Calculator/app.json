@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/calculator/calculator"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "简易计算器",
+    "navigationBarTextStyle":"white"
+  }
+}

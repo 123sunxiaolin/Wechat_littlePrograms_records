@@ -32,3 +32,8 @@
 
 - **align-items**:flex-end/center;
 [flex布局详解](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+
+8、项目实战_简易计算器 `10.08`
+
+- 着重练习计算器的基本布局；
+- 使用到的控件有：**input**、**button**
