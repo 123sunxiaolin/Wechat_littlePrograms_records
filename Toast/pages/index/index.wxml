@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <toast hidden="{{toast1Hidden}}" duration = "1000" bindchange="toast1Change"> 默认 </toast>
+  </view>
+  <button bindtap = "onClickBtn" type = "primary">点击显示Toast</button>
+
+</view>
