@@ -1,0 +1,29 @@
+{
+    "pages":[
+        "pages/network/network",
+        "pages/openInterface/openInterface"
+    ],
+    "tabBar":{
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/network/network",
+      "iconPath": "images/wechat.png",
+      "selectedIconPath": "images/wechatHL.png",
+      "text": "网络请求"
+    }, {
+      "pagePath": "pages/openInterface/openInterface",
+      "iconPath": "images/wechat.png",
+      "selectedIconPath": "images/wechatHL.png",
+      "text": "开放接口"
+    }]
+    },
+    "window":{
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "网络操作",
+        "navigationBarBackgroundColor": "#fbf9fe",
+        "backgroundColor": "#fbf9fe"
+  }
+}

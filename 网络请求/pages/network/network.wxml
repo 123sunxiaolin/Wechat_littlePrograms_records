@@ -1,0 +1,6 @@
+<view class = "page-mian">
+    <button class = "button" size = "default" type = "primary" bindtap = "onClickGet" loading = "{{isGetLoading}}">发起Get请求</button>
+    <button class = "button" size = "default" type = "primary" bindtap = "onClickPost" loading = "{{isPostLoading}}">发起Post请求</button>
+    <button class = "button" size = "default" type = "primary" bindtap = "onClickPack" loading = "{{isPackLoading}}">封装请求方法</button>
+    
+</view>
